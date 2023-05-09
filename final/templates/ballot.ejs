@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Ballot</title>
+  <style>
+		html {
+			font-size: 14px;
+		}
+		h1 {
+			margin-top: 0rem;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			
+			padding-right:64rem;
+			font-size: 3.5rem;
+			color: rgb(134, 11, 26);
+		}
+
+		body {
+			background-color: rgb(195, 216, 238);
+			font-size: 1.5rem;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>Ballot</h1>
+	<form method="post" action = "/ballotConfirmation" >
+		<fieldset>
+            
+			<label><strong>Name: </strong><input type="text" name="name" required /></label>
+			<label for = "party"><strong>Political Party:</strong></label>
+            <select name="party" id="party">
+              <option value="Democrat">Democrat</option>
+              <option value="Republican">Republican</option>
+              <option value="Independent">Independent</option>
+            </select>
+            <br>
+            <br>
+            <label for = "state"><strong>State:</strong></label>
+            <select name="state" id="state">
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+            </select>
+            <br>
+            <br>
+            <label><strong>Age: </strong><input type="number" name="age" required min="18"/></label>
+		</fieldset>
+
+		<br>
+		<input type="reset" />
+		<input type="submit" value="Submit Application" onclick="submitAlert()"/>
+	</form>
+</body>
+
+<hr>
+<br>
+
+<script>
+    function submitAlert() {
+      alert('Are you sure you want to submit the ballot? This cannot be undone.');
+    }
+</script>
+
+<a href="/">Voter Home Page</a></li>
+
+</html>
